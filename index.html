@@ -10,16 +10,18 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 
   </head>
-  <body>
+  <body class="main-section">
 
-    <main> 
-        <h1 class="main-title">Minecraft Trivia!</h1>
-        <nav>
-            <ul class="nav-list">
-                <li><a href="#view-all-scores">View High Scores</a></li>
-                <li>Time Remaining: </li>
-            </ul>
-        </nav>
+    <main > 
+        <section>
+           <h1 class="main-title">Minecraft Trivia!</h1>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="#view-all-scores">View High Scores</a></li>
+                </ul>
+            </nav>  
+        </section>
+       
         <section class="main-body">
             <h2 class="subtitle">How much do you think you know about Minecraft?</h2>
             <p class="explain-text">Attempt to answer the following Minecraft-related questions within the time limit. Keep in mind that the incorrect 
@@ -30,8 +32,45 @@
         <section class="start-btn">
             <button class="big-btn">Start Quiz</button>
         </section>
+
+        <section class="quiz">
+            <div id="timer">Time Remaining: </div>
+            <div id="questions"><p>Questions go here</p></div>
+
+            <button id="A">A</button>
+            <button id="B">B</button>
+            <button id="C">C</button>
+            <button id="D">D</button>
+
+            <div id="results"></div>
+        </section>
+
+        <section class="game-over">
+            <div id="final-score"></div>
+            <input type="text" size="30" placeholder="Enter your name for high score" name="Name" id="input-name">
+            <button id="score-submission">Submit Score</button>
+        </section>
+
+        <section class="highscore-container">
+            <div>
+              <h3>User Name</h3>
+                <p>Score:</p>  
+            </div>
+
+            <div id="user-names"></div>
+            <div id="highscore-score"></div>
+
+        </section>
+
+        <section class="end-game-btns">
+            <button id="play-again-btn">Play Again</button>
+            <button id="clear-scores">Clear Highscores</button>
+        </section>
+
+
     </main>
 
 	<script src="./assets/java/script.js"></script>
+
   </body>
 </html>
