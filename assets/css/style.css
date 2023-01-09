@@ -41,19 +41,33 @@ main {
     margin-top: 3%;
 }
 
-.big-btn {
-    width: 15%;
-    height: 30px;
-}
-
 .main-section {
     display: flex;
     justify-content: center;
     text-align: center;
 }
 
+.quiz {
+    display: none;
+}
+
+.game-over {
+    display: none;
+}
+
+.highscore-container {
+    display:none;
+}
+
+.end-game-btns {
+    display: none;
+}
+
 /*IDs*/
 
-
+#big-btn {
+    width: 15%;
+    height: 30px;
+}
 
 /*Media Queries*/
