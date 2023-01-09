@@ -14,11 +14,9 @@
 
     <main > 
         <section>
-           <h1 class="main-title">Minecraft Trivia!</h1>
-            <nav>
-                <ul class="nav-list">
-                    <li><a href="#view-all-scores">View High Scores</a></li>
-                </ul>
+           <h1 class="main-title">Minecraft Trivia</h1>
+            <nav class="nav-list">
+                <a href="#view-all-scores">View High Scores</a>   
             </nav>  
         </section>
        
@@ -30,7 +28,7 @@
         </section>
 
         <section class="start-btn">
-            <button class="big-btn">Start Quiz</button>
+            <button id="big-btn">Start Quiz</button>
         </section>
 
         <section class="quiz">
@@ -52,10 +50,13 @@
         </section>
 
         <section class="highscore-container">
-            <div>
+            <div id="highscore-page">
+                <div id="highscore-header">
               <h3>User Name</h3>
                 <p>Score:</p>  
+                </div>
             </div>
+            
 
             <div id="user-names"></div>
             <div id="highscore-score"></div>
