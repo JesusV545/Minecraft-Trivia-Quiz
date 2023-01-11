@@ -16,3 +16,7 @@ To play, simply click the start quiz button and attempt to answer the questions 
 HTML, CSS, Javascript
 
 ### Links
+https://jesusv545.github.io/Minecraft-Trivia-Quiz/
+
+### Developer's Note
+The project still needs work and will be continously improved to function more efficiently and look better asthetically. 
