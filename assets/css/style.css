@@ -6,19 +6,32 @@ main {
     padding: 0;
 }
 
+button:hover {
+    box-shadow: 5px 5px 5px  green;
+}
+
+input {
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+    color:black;
+    padding-bottom: 4px;
+    text-align: center;
+}
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
 /*Classes*/
 
 .main-title {
     display: flex;
     justify-content: center;
     font-size: 40px;
-}
-
-.nav-list {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    font-size: 20px;
 }
 
 .subtitle {
@@ -35,16 +48,14 @@ main {
     margin-left: 25%;
 }
 
-.start-btn {
-    display: flex;
-    justify-content: center;
-    margin-top: 3%;
-}
-
 .main-section {
     display: flex;
     justify-content: center;
     text-align: center;
+    width: 100vw;
+    height: 100vh;
+    max-width: 80rem;
+    margin: 0 auto;
 }
 
 .quiz {
@@ -53,21 +64,79 @@ main {
 
 .game-over {
     display: none;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+
 }
 
-.highscore-container {
+/* .highscore-container {
     display:none;
-}
+} */
 
 .end-game-btns {
     display: none;
 }
 
-/*IDs*/
-
-#big-btn {
+.big-btn {
     width: 15%;
     height: 30px;
+}
+
+.highscore-container {
+    height: 100%;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.start-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.align-btns {
+    
+}
+
+/*IDs*/
+
+#startHighscorePage {
+    width: 15%;
+    height: 30px;
+}
+
+#timer {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: maroon;
+    color: white;
+    font-size: 30px;
+
+}
+
+#results {
+    display: none;
+}
+
+#highscore-page {
+    width: 50%;
+    background-color: green;
+    display: none;
+}
+
+#highscore-header {
+    display: flex;
+    color: lightblue;
+    background-color: green;
+    justify-content: space-around;
+}
+
+#user-names{
+    display: flex;
+    font-weight: bold;
 }
 
 /*Media Queries*/
