@@ -11,54 +11,62 @@
 
   </head>
   <body>
-
-    <main class="main-section"> 
-
+    <main>
         <section class="start-page">
-            <h1 class="main-title">Minecraft Trivia</h1>       
-            <h2 class="subtitle">How much do you think you know about Minecraft?</h2>
-            <p class="explain-text">Attempt to answer the following Minecraft-related questions within the time limit. Keep in mind that the incorrect 
-                answer will penalize your score/time by ten seconds! </p>
-            <button class="big-btn">Start Quiz</button>
-            <button id="startHighscorePage" onclick="showTheHighScore()">High Scores</button>
+            <h1>Minecraft Trivia Quiz!</h1>
+            <h2>How much do you think you know about Minecraft?</h2>  
+            <p>Attempt to answer the following Minecraft-related questions within the time limit. 
+                Keep in mind that the incorrect answer will penalize your score/time by ten seconds! </p>  
+            <div>
+                <button class="start-btn">Start Quiz</button>       
+                <button class="high-score-btn">High Scores</button>
+            </div> 
+           
+        </section>
+
+        <quiz class="quiz">
+            <div>Time Remaining: </div>
+            <div><p>Questions go here</p></div>
+
+            <button id="a" class="choice-btn">A</button>
+            <button id="b" class="choice-btn">B</button>
+            <button id="c" class="choice-btn">C</button>
+            <button id="d" class="choice-btn">D</button>
+            
+            <div id="results"></div>
+        </quiz>
+
+        <section id="gameover-page">
+            <div id="final-score"></div>
+            <input type="text" placeholder="Enter your name" id="input-name">
+            <button id="score-submission">Submit Score</button>
+        </section>
+
+
+        <section class="high-score-container">
+           <div class="high-score-page">
+                <div id="high-score-info">
+                    <p>User Name</p>
+                    <p>Score</p>
+                </div>
+
+                <div class="user-scores">
+                    <div id="user-name">user name placeholder</div>
+                    <div id="total-score">score place holder</div>      
+                </div>
+
+
+            </div> 
         </section>
         
-        <section class="quiz">
-            <div id="timer">Time Remaining: </div>
-            <div id="questions"><p>Questions go here</p></div>
 
-            <button id="A" onclick="checkAnswer('A')">A</button>
-            <button id="B" onclick="checkAnswer('B')">B</button>
-            <button id="C" onclick="checkAnswer('C')">C</button>
-            <button id="D" onclick="checkAnswer('D')">D</button>
-
-            <div id="results"></div>
+        <section id="end-game-btns">
+            <button id="play-again">Play Again</button>
+            <button id="clear-scores">Clear Scores</button>
         </section>
-
-        <section class="game-over">
-            <div id="final-score"></div>
-            <input type="text" size="30" placeholder="Enter your name for high score" name="Name" id="input-name">
-            <button id="score-submission" onclick="showTheHighScore">Submit Score</button>
-        </section>
-
-        <section class="highscore-container">
-            <div id="highscore-page">
-                <div id="highscore-header">
-              <h3>User Name</h3>
-                <h3>Score</h3>  
-                </div>
-            </div>
-            <div id="user-names"></div>
-            <div id="highscore-score"></div>
-        </section>
-
-        <section class="end-game-btns">
-            <button id="play-again-btn" onclick="replayTheQuiz()">Play Again</button>
-            <button id="clear-scores" onclick="clearTheScores()">Clear Highscores</button>
-        </section>
-
 
     </main>
+
 
 	<script src="./assets/java/script.js"></script>
 

@@ -1,142 +1,43 @@
+/*Global*/
 
-/*Universal Selector*/
-
-main {
-    margin: 0;
-    padding: 0;
-}
-
-button:hover {
-    box-shadow: 5px 5px 5px  green;
-}
-
-input {
-    text-align: center;
-}
-
-li {
-    list-style-type: none;
-    color:black;
-    padding-bottom: 4px;
-    text-align: center;
-}
-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
 /*Classes*/
-
-.main-title {
+.start-page {
     display: flex;
     justify-content: center;
-    font-size: 40px;
-}
-
-.subtitle {
-    font-size: 30px;
-    display: flex;
-    justify-content: center;
-    margin-top: 4%;
-}
-
-.explain-text {
+    flex-wrap: wrap;
     text-align: center;
-    font-size: 20px;
-    margin-right: 25%;
-    margin-left: 25%;
-}
-
-.main-section {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    width: 100vw;
-    height: 100vh;
-    max-width: 80rem;
-    margin: 0 auto;
 }
 
 .quiz {
-    display: none;
-}
-
-.game-over {
-    display: none;
     text-align: center;
-    align-items: center;
-    flex-direction: column;
 
 }
 
-/* .highscore-container {
-    display:none;
-} */
-
-.end-game-btns {
-    display: none;
-}
-
-.big-btn {
-    width: 15%;
-    height: 30px;
-}
-
-.highscore-container {
-    height: 100%;
-    width: 100%;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.start-page {
+.choice-btn {
     display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
-.align-btns {
-    
+.user-scores {
+    display: flex;
+    justify-content: space-evenly;
 }
 
+.high-score-page {
+
+}
 /*IDs*/
-
-#startHighscorePage {
-    width: 15%;
-    height: 30px;
-}
-
-#timer {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: maroon;
-    color: white;
-    font-size: 30px;
-
-}
-
-#results {
-    display: none;
-}
-
-#highscore-page {
-    width: 50%;
-    background-color: green;
-    display: none;
-}
-
-#highscore-header {
+#high-score-info {
     display: flex;
-    color: lightblue;
-    background-color: green;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
-#user-names{
+#end-game-btns {
     display: flex;
-    font-weight: bold;
+    justify-content: center;  
+    margin-top: 15px; 
 }
 
-/*Media Queries*/
+#gameover-page {
+    display: flex;
+    justify-content: center;
+}
