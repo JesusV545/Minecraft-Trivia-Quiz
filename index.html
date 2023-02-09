@@ -25,20 +25,22 @@
         </section>
 
         <quiz class="quiz">
-            <div>Time Remaining: </div>
-            <div><p>Questions go here</p></div>
+            <div id="timer">Time Remaining: </div>
+            <div id="quiz-questions">Questions go here</div>
 
-            <button id="a" class="choice-btn">A</button>
-            <button id="b" class="choice-btn">B</button>
-            <button id="c" class="choice-btn">C</button>
-            <button id="d" class="choice-btn">D</button>
-            
+            <div class="answer-choices">
+                <button id="a" class="choice-btn">A</button>
+                <button id="b" class="choice-btn">B</button>
+                <button id="c" class="choice-btn">C</button>
+                <button id="d" class="choice-btn">D</button>             
+            </div>
+
             <div id="results"></div>
         </quiz>
 
         <section id="gameover-page">
             <div id="final-score"></div>
-            <input type="text" placeholder="Enter your name" id="input-name">
+            <input type="text" color="white" placeholder="Enter your name" id="input-name">
             <button id="score-submission">Submit Score</button>
         </section>
 
