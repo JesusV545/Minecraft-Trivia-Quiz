@@ -1,4 +1,15 @@
 /*Global*/
+/* * {
+    background-image: url('https://wallpaperaccess.com/full/6104138.jpg');
+    color: white;
+    opacity: 10%;
+} */
+
+button {
+    width: 100px;
+    height: 40px;
+   
+}
 
 /*Classes*/
 .start-page {
@@ -6,15 +17,28 @@
     justify-content: center;
     flex-wrap: wrap;
     text-align: center;
+    flex-direction: column;
 }
 
 .quiz {
     text-align: center;
+    display: none;
 
+}
+
+.answer-choices {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
 }
 
 .choice-btn {
     display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 25px;
 }
 
 .user-scores {
@@ -25,6 +49,11 @@
 .high-score-page {
 
 }
+
+.high-score-container {
+    display: none;
+}
+
 /*IDs*/
 #high-score-info {
     display: flex;
@@ -35,9 +64,15 @@
     display: flex;
     justify-content: center;  
     margin-top: 15px; 
+    display: none;
 }
 
 #gameover-page {
     display: flex;
     justify-content: center;
+    display: none;
+}
+
+::placeholder {
+    color: white;
 }
