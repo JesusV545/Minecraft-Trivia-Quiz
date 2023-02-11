@@ -16,7 +16,7 @@
             <h1>Minecraft Trivia Quiz!</h1>
             <h2>How much do you think you know about Minecraft?</h2>  
             <p>Attempt to answer the following Minecraft-related questions within the time limit. 
-                Keep in mind that the incorrect answer will penalize your score/time by ten seconds! </p>  
+                Keep in mind that the incorrect answer will penalize your time by 5 seconds! </p>  
             <div>
                 <button class="start-btn">Start Quiz</button>       
                 <button class="high-score-btn">High Scores</button>
@@ -29,10 +29,10 @@
             <div id="quiz-questions">Questions go here</div>
 
             <div class="answer-choices">
-                <button id="a" class="choice-btn">A</button>
-                <button id="b" class="choice-btn">B</button>
-                <button id="c" class="choice-btn">C</button>
-                <button id="d" class="choice-btn">D</button>             
+                <button id="A" class="choice-btn">A</button>
+                <button id="B" class="choice-btn">B</button>
+                <button id="C" class="choice-btn">C</button>
+                <button id="D" class="choice-btn">D</button>             
             </div>
 
             <div id="results"></div>
@@ -40,8 +40,10 @@
 
         <section id="gameover-page">
             <div id="final-score"></div>
-            <input type="text" color="white" placeholder="Enter your name" id="input-name">
-            <button id="score-submission">Submit Score</button>
+            <div class="end">
+                <input type="text" color="black" placeholder="Enter your name or initials" id="input-name">
+                <button id="score-submission">Submit Score</button>
+            </div>
         </section>
 
 
@@ -53,8 +55,8 @@
                 </div>
 
                 <div class="user-scores">
-                    <div id="user-name">user name placeholder</div>
-                    <div id="total-score">score place holder</div>      
+                    <div id="user-name"></div>
+                    <div id="user-score"></div>      
                 </div>
 
 
